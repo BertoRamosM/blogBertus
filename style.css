@@ -1,3 +1,8 @@
+*{
+    font-family: 'Iceland', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Stardos Stencil', cursive;
+}
 body{
     
     display: flex;
@@ -16,7 +21,7 @@ body{
     .navbar {
         background-image: url(images/wood.avif);
         padding: 20px;
-        width: 10vw;
+        width: 7vw;
         color: #fff;
         position: fixed;
         top: 0;
@@ -45,7 +50,7 @@ body{
         background-image: url(images/sea.avif);
         height: 15vw;
         width: 90vw;
-        margin-left: 200px;
+        margin-left: 170px;
       }
 
       .title > *{
@@ -59,7 +64,7 @@ body{
       .article{
         background-image: url(images/bitacora.avif);
         font-size: 1.7rem;
-        margin-left: 220px;
+        margin-left: 175px;
         margin-right: 0px;
         color:rgb(255, 255, 255);
         text-align: left;
@@ -67,15 +72,35 @@ body{
       }
 
       .article > p{
-        padding-left: 75px;
+        padding-left: 100px;
         padding-top: 25px;
+        padding-right: 75px;
       }
 
-      .conclusion{
-        color: rgb(255, 255, 255);
-        background-image: url(images/sea.avif);
+    
+      .buttons{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 300px;
+        padding-bottom: 30px;
+        margin-left: 30px;
         
       }
+       .buttons > *{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(243, 242, 248);
+        border: none;
+        font-size: 1.4rem;
+        text-align: center;
+        border-radius: 10%;
+       }
+        .buttons *:hover{
+            background-color: #2d04d2;
+            color: white;
+        }
 
       footer{
         background-image: url(images/sea.avif);
