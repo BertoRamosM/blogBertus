@@ -4,7 +4,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Stardos Stencil', cursive;
 }
 body{
-    
+    background-image: url(images/sea.avif);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -62,7 +62,9 @@ body{
       }
       
       .article{
-        background-image: url(images/bitacora.avif);
+        /*background-image: url(images/bitacora.avif);*/
+        background-color: rgba(6, 6, 76, 0.8);
+        
         font-size: 1.7rem;
         margin-left: 175px;
         margin-right: 0px;
@@ -109,7 +111,7 @@ body{
         
       }
 
-      .link{
+      .footerLink{
         
         color: inherit;
       }
@@ -117,3 +119,24 @@ body{
     a:hover {
   outline: none; 
 }
+
+
+
+
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+    width: 10px; /* width of the scroll bar */
+    background-color: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #413f3f; /* color of the scroll bar handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the scroll bar handle on hover */
+  }
