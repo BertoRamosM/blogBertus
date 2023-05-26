@@ -1,142 +1,88 @@
+:root{
+  --text-color: rgb(240, 237, 235);
+  --div-color: rgb(21, 21, 21);
+  --link-color: #9D00FF;
+  --border-color: 2px solid rgb(88, 87, 87);
+}
+
 *{
-    font-family: 'Iceland', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Stardos Stencil', cursive;
-}
-body{
-    background-image: url(images/sea.avif);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-}
-    
-
-    .navbar {
-        background-image: url(images/wood.avif);
-        padding: 20px;
-        width: 7vw;
-        color: #fff;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        border: black 1px solid;
-      }
-      
-      .navbar a {
-        display: block;
-        color: #fefefe;
-        text-decoration: none;
-        padding: 10px;
-        margin-bottom: 10px;
-        font-size: 2rem;
-        margin-top: 100px;
-        border-radius: 15%;
-        text-align: center;
-      }
-      
-      .navbar a:hover {
-        background-color: #D2042D;
-      }
-      
-      .title{
-        background-image: url(images/sea.avif);
-        height: 15vw;
-        width: 90vw;
-        margin-left: 170px;
-      }
-
-      .title > *{
-        padding-left: 100px;
-      }
-
-      .title{
-        font-size: 2rem;
-      }
-      
-      .article{
-        /*background-image: url(images/bitacora.avif);*/
-        background-color: rgba(6, 6, 76, 0.8);
-        
-        font-size: 1.7rem;
-        margin-left: 175px;
-        margin-right: 0px;
-        color:rgb(255, 255, 255);
-        text-align: left;
-
-      }
-
-      .article > p{
-        padding-left: 100px;
-        padding-top: 25px;
-        padding-right: 75px;
-      }
-
-    
-      .buttons{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        gap: 300px;
-        padding-bottom: 30px;
-        margin-left: 30px;
-        
-      }
-       .buttons > *{
-        width: 100px;
-        height: 50px;
-        background-color: rgb(243, 242, 248);
-        border: none;
-        font-size: 1.4rem;
-        text-align: center;
-        border-radius: 10%;
-       }
-        .buttons *:hover{
-            background-color: #2d04d2;
-            color: white;
-        }
-
-      footer{
-        background-image: url(images/sea.avif);
-        width: 100%;
-        text-align: center;
-        
-      }
-
-      .footerLink{
-        
-        color: inherit;
-      }
-      a:focus,
-    a:hover {
-  outline: none; 
-}
-
-
-
-
-
-/*SCROLLBAR*/
-
-::-webkit-scrollbar {
-    width: 10px; /* width of the scroll bar */
-    background-color: black;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  background-color: var(--div-color);
+  color: var(--text-color);
   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #413f3f; /* color of the scroll bar handle */
-  }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* color of the scroll bar handle on hover */
+}
+
+.content{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.navbar{
+ 
+  height: 100vh;
+  width: 20vh;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  outline: var(--border-color);
+
+}
+
+.navbar a{
+  margin-top: 9rem;
+  text-align: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.main-content{
+ 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+.title{
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: -2rem;
+  border: var(--border-color);
+  background-color: var();
+
+} 
+
+
+.subtitle{
+  padding-top: 1%;
+  padding-left: 2%;
+}
+.article{
+  font-size: 1.2rem;
+  height: 80vh;
+  padding: 2%;
+  line-height: 2.5rem;
+  }
+
+  footer{
+    height: 4vh;
+    width: 80vw;
+    align-self: center;
+    text-align: center;
+   
+  }
+
+  footer a{
+    text-decoration: none;
+    color: var(--link-color);
+    border: var(--border-color);
   }
